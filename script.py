@@ -1,4 +1,7 @@
 import praw
+from termcolor import colored
+
+
 
 reddit = praw.Reddit(
     client_id="RwJpvGeakXSR0dbHQ3WchQ",
@@ -31,4 +34,4 @@ sort_by(sgexam.new(limit=10))
 sort_by(sgexam.top(limit=10,time_filter='day'))
 
 for title,link in posts.items():
-    print(title + '\n' + link + '\n') 
+    print(title + '\n' + colored(link,'light_blue') + '\n') 
