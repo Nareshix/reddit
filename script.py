@@ -34,4 +34,4 @@ sort_by(sgexam.new(limit=10))
 sort_by(sgexam.top(limit=10,time_filter='day'))
 
 for title,link in posts.items():
-    print(title + '\n' + colored(link,'light_blue') + '\n') 
+    print(colored(title,'light_green') + '\n' + colored(link,'light_blue') + '\n') 
